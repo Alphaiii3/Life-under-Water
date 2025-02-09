@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fav" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="422dp"
+                android:layout_height="319dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="700dp"
+                    android:layout_height="300dp"
+                    android:layout_marginEnd="70dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.451"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/absde" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/we1"
+                android:text="Importance of Marine Life"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+
+            <TextView
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oxygen Production"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The ocean is often called the lungs of the Earth because phytoplankton, microscopic marine plants, produce more than 50% of the world's oxygen through photosynthesis. These tiny organisms play a crucial role in maintaining breathable air for both marine and terrestrial life."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Climate Regulation"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oceans act as a natural climate buffer by absorbing around 30% of human-generated CO₂, reducing the effects of global warming. They also store and distribute heat, influencing weather patterns, ocean currents, and rainfall, which directly impact agriculture and human settlements."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Biodiversity"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marine ecosystems support a vast range of life forms, from microscopic plankton to massive blue whales. These species form complex food webs that contribute to ecosystem balance, scientific discoveries, and even medicinal advancements. Coral reefs, known as the rainforests of the sea, host nearly 25% of marine species despite covering only 1% of the ocean floor."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food and Economy"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/editTextText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The ocean provides an essential food source for over 3 billion people worldwide, especially through fisheries and aquaculture. Additionally, marine resources contribute to economies globally, supporting industries like tourism, transportation, and medicine development. Sustainable ocean-based activities generate billions in revenue and provide employment to millions of people."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/editTextText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coastal Protection"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/editTextText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marine ecosystems such as coral reefs, mangroves, and seagrass beds act as natural barriers against coastal erosion, hurricanes, and rising sea levels. They absorb wave energy and protect coastal communities from storm surges and flooding, reducing potential economic and human losses."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/bu" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

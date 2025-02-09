@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Notification Settings"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Manage your notification preferences and stay updated."
+                android:textColor="@android:color/system_neutral2_400"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="General Notifications"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_general"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Email Notifications"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Push Notifications"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_push"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sound Vibration"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Promotional Updates"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_promo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Notification Preferences"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/notification_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_important"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only Important Notifications"
+                    android:textColor="@android:color/system_neutral2_400" />
+
+                <RadioButton
+                    android:id="@+id/radio_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receive All Notifications"
+                    android:textColor="@android:color/system_neutral2_400" />
+
+                <RadioButton
+                    android:id="@+id/radio_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disable All Notifications"
+                    android:textColor="@android:color/system_neutral2_400" />
+            </RadioGroup>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Save Changes"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

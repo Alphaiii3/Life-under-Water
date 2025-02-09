@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/gradient_color_background"
+        android:paddingHorizontal="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+                <ImageView
+                    android:id="@+id/Type"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+
+            <ImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="101dp"
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toTopOf="@+id/username"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="155dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/we1"
+                android:text="Alpha"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_picture" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/new1"
+                android:text="alphanova@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/membership_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/username" />
+
+            <LinearLayout
+                android:id="@+id/membership_bar"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFD700"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email">
+
+                <TextView
+                    android:id="@+id/Type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/new2"
+                    android:text="Platinum Member"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_profile_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/intro_btn_background"
+                android:text="Edit Profile"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/membership_bar" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/view_subscription_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_btn_background"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="50dp"
+                android:textColor="@color/white"
+                android:text="View Subscription Plan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_profile_button" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/notification_settings_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/intro_btn_background"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="50dp"
+                android:textColor="@color/white"
+                android:text="Notification Settings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_subscription_button" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/privacy_settings_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_btn_background"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="50dp"
+                android:text="Privacy Settings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/notification_settings_button" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/connect_social_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_btn_background"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="50dp"
+                android:text="Connect Social Media"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/privacy_settings_button" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/help_support_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_btn_background"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="50dp"
+                android:text="Help and Support"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/connect_social_button" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/feedback_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/intro_btn_background"
+                android:text="Feedback"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/help_support_button" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logout_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_btn_background"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#FF6347"
+                android:text="Log Out"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/feedback_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.core.widget.NestedScrollView>

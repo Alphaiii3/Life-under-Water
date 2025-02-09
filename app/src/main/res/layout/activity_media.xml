@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Connect Social Media"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Link your social media accounts to enhance your experience."
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <!-- Social Media Accounts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <!-- Facebook -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/fb" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Facebook"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- Instagram -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/insta" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Instagram"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- Twitter -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/twiter" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Twitter"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- LinkedIn -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/linkin" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LinkedIn"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- TikTok -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/tiktok" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TikTok"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <Switch
+                        android:id="@+id/switch_tiktok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Link Accounts Buttons -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/link_social_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Link Accounts"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/unlink_social_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Unlink All Accounts"
+                android:textColor="@color/white" />
+
+            <!-- Save Changes Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Save Changes"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

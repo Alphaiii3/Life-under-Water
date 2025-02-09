@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fav" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="500dp"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="65dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/bo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/we1"
+                android:text="Pollution Types"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marine pollution is categorized into several types based on the source and nature of the pollutants. Here are the major types:"
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+
+            <!-- Pollution Type Sections -->
+            <TextView
+                android:id="@+id/textViewPlastic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plastic Pollution"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plastic waste, including bags, bottles, microplastics, and discarded fishing gear, poses a severe and growing threat to marine ecosystems. These pollutants can entangle marine animals such as sea turtles, dolphins, and seabirds, restricting their movement and often leading to injury or death. Additionally, many marine species mistake plastic debris for food, which can cause internal blockages, malnutrition, and even poisoning due to the toxic chemicals leaching from plastics. Over time, plastics break down into microplastics, which infiltrate the entire marine food chain, ultimately affecting not only marine life but also human health through seafood consumption. Addressing plastic pollution is crucial to preserving ocean biodiversity and maintaining the health of marine environments."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+
+
+            <TextView
+                android:id="@+id/textViewOil"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Oil Pollution"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oil spills from ships, offshore drilling operations, and pipeline leaks are major environmental disasters that severely impact marine ecosystems. When oil enters the ocean, it forms a thick, toxic layer on the water’s surface, reducing oxygen levels and suffocating marine life such as fish, seabirds, and marine mammals. The sticky nature of crude oil coats the feathers of birds, making it difficult for them to fly, stay warm, or float properly, often leading to death. Oil also contaminates coral reefs and coastal habitats, disrupting entire food chains and causing long-term damage to marine biodiversity. Additionally, the toxic components of oil can bioaccumulate in marine organisms, leading to health issues that extend up the food chain, ultimately affecting human populations that rely on seafood. Cleaning up oil spills is complex and expensive, making prevention and strict regulations essential to protecting marine environments."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+
+            <TextView
+                android:id="@+id/textViewChemical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:text="Chemical Pollution"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Industrial discharge, agricultural runoff, and household chemicals are major sources of water pollution, introducing harmful toxins into marine ecosystems. Factories release heavy metals, hazardous chemicals, and untreated waste into rivers and oceans, poisoning aquatic life and disrupting ecosystems. Agricultural runoff, including pesticides, herbicides, and fertilizers, leads to excessive nutrient pollution, causing harmful algal blooms that deplete oxygen levels and create dead zones where marine life cannot survive. Household chemicals, such as detergents and pharmaceuticals, further contribute to water contamination, affecting fish, shellfish, and other marine organisms. Over time, these pollutants accumulate in the tissues of marine life through bioaccumulation, leading to serious health risks for humans who consume contaminated seafood. This pollution not only threatens biodiversity but also has long-term consequences for food security and public health, making stricter regulations and sustainable practices essential for protecting marine environments."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+
+            <TextView
+                android:id="@+id/textViewNutrient"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="Nutrient Pollution (Eutrophication)"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excess nitrogen and phosphorus from agricultural fertilizers, untreated sewage, and household detergents enter water bodies through runoff, triggering harmful algal blooms. These rapid algae overgrowths block sunlight, disrupting aquatic plant life and reducing oxygen production. As the algae die and decompose, bacteria consume large amounts of oxygen in the water, creating hypoxic conditions known as dead zones—areas where marine life cannot survive. Fish, shellfish, and other aquatic organisms suffocate due to the lack of oxygen, leading to massive die-offs and disrupting entire marine ecosystems. These dead zones can have devastating effects on fisheries, coastal economies, and biodiversity. Additionally, some algal blooms produce toxins that contaminate seafood, posing health risks to humans. Addressing nutrient pollution through sustainable farming practices, improved wastewater treatment, and eco-friendly household products is crucial to preventing algal blooms and protecting marine environments."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+
+
+            <TextView
+                android:id="@+id/textViewHeavyMetal"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Heavy Metal Pollution"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mercury, lead, cadmium, and arsenic are toxic heavy metals that are released into the environment through various human activities, including mining, industrial processes, and wastewater discharges. These pollutants enter marine ecosystems, where they contaminate the water, sediment, and organisms. Over time, they can accumulate in the tissues of marine life, particularly seafood, through a process known as bioaccumulation. As these metals build up in the food chain, they pose significant risks to both marine wildlife and human health. Exposure to these toxins can lead to serious neurological damage, particularly in developing children, and can also cause other health issues such as kidney damage, liver dysfunction, and increased cancer risk. The persistence of these contaminants in the marine environment poses a long-term threat to biodiversity and food security."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/ddd"
+                tools:layout_marginTop="35dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

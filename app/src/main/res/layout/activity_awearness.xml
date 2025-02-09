@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fav" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/abc3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/we1"
+                android:text="Pollution Awareness"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marine pollution is the contamination of oceans and seas due to human activities, posing a serious threat to marine ecosystems and biodiversity. It is caused by plastic waste, oil spills, chemical runoff, sewage discharge, and excessive carbon emissions, leading to habitat destruction, water toxicity, and harm to marine species."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plastics and microplastics are particularly dangerous, as they are ingested by marine animals, disrupting the food chain. Oil spills coat marine life, affecting their ability to survive, while chemical pollutants cause water contamination and coral reef degradation."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Industrial waste and agricultural runoff contribute significantly to ocean pollution. Excess fertilizers and pesticides washed into the sea lead to harmful algal blooms, depleting oxygen levels and creating dead zones where marine life cannot survive."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To combat marine pollution, it is essential to reduce plastic use, regulate industrial waste, promote sustainable fishing, and raise awareness about ocean conservation. Implementing stricter environmental laws, encouraging biodegradable alternatives, and supporting beach clean-up efforts are crucial steps in protecting our oceans for future generations."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/ccc2" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

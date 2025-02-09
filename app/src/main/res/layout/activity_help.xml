@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Help and Support"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Need assistance? Find answers, contact support, or report issues."
+                android:textColor="@android:color/system_neutral2_400"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Frequently Asked Questions"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/divider_horizontal_dark"
+                    android:text="How to reset my password?"
+                    android:textColor="@android:color/system_neutral2_400" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/divider_horizontal_dark"
+                    android:text="How to update my profile?"
+                    android:textColor="@android:color/system_neutral2_400" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/divider_horizontal_dark"
+                    android:text="How to contact support?"
+                    android:textColor="@android:color/system_neutral2_400" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Contact Support"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@android:drawable/ic_dialog_email" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email Support"
+                    android:textColor="@android:color/system_neutral2_400"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/email_support_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textColor="@color/white"
+                    android:background="@drawable/intro_btn_background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@android:drawable/stat_sys_phone_call" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Live Chat Support"
+                    android:textColor="@android:color/system_neutral2_400"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/chat_support_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat Now"
+                    android:textColor="@color/white"
+                    android:background="@drawable/intro_btn_background" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Report an Issue"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/report_issue_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Describe the issue..."
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:textColorHint="#B8020202" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/report_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Submit Report"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Submit Feedback"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/feedback_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Share your thoughts..."
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:textColorHint="#C5050505" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_feedback_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Submit Feedback"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Privacy Settings"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Manage your privacy preferences and control your data."
+                android:textColor="@android:color/system_neutral2_400"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Profile Visibility"
+                        android:textColor="@android:color/system_neutral2_400"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_profile_visibility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Read Receipts"
+                        android:textColor="@android:color/system_neutral2_400"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_read_receipts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Last Seen and Online"
+                        android:textColor="@android:color/system_neutral2_400"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_last_seen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Location Sharing"
+                        android:textColor="@android:color/system_neutral2_400"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Allow Data Collection"
+                        android:textColor="@android:color/system_neutral2_400"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_data_collection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Privacy Preferences"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/privacy_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_everyone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visible to Everyone"
+                    android:textColor="@android:color/system_neutral2_400" />
+
+                <RadioButton
+                    android:id="@+id/radio_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only Visible to Contacts"
+                    android:textColor="@android:color/system_neutral2_400" />
+
+                <RadioButton
+                    android:id="@+id/radio_nobody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hidden from Everyone"
+                    android:textColor="@android:color/system_neutral2_400" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Manage Your Data"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/delete_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/intro_btn_background"
+                android:text="Delete Account"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clear_data_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/intro_btn_background"
+                android:text="Clear All Data"
+                android:textColor="@color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Save Changes"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

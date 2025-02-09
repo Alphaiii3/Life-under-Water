@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="333dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fav" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Educational Section -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/we1"
+                android:text="Ocean Cleanup Activities"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:padding="10dp"
+                android:text="Educational Workshops"
+                android:textColor="#FFC107"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover the importance of marine conservation and explore effective strategies to safeguard our oceans. Learn about the devastating impact of pollution, including plastic waste, oil spills, and chemical contaminants, and how they disrupt marine life. Understand the role of sustainable fishing practices, habitat restoration, and climate change mitigation in preserving marine biodiversity. Engage with leading experts, marine biologists, and conservationists to gain in-depth knowledge on protecting delicate marine ecosystems. Find out how you can contribute—whether through reducing single-use plastics, supporting marine protected areas, participating in beach cleanups, or advocating for policies that promote ocean sustainability."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:justificationMode="inter_word"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnx1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/intro_btn_background"
+                android:text="Register Now"
+                android:textColor="@color/white" />
+
+            <!-- Report Pollution -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:padding="10dp"
+                android:text="Report Pollution"
+                android:textColor="#FFC107"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help us monitor and minimize pollution by reporting plastic waste, oil spills, and other environmental hazards in your area. Your reports provide valuable data that aid in organizing targeted cleanup efforts, protecting marine life, and preventing further environmental damage. By taking action, you play a crucial role in preserving our oceans and promoting a healthier ecosystem."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:justificationMode="inter_word"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnx2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/intro_btn_background"
+                android:text="Register Now"
+                android:textColor="@color/white" />
+
+            <!-- Clean Up Events -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="Join Cleanup Events"
+                android:textColor="#FFC107"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take part in local and global cleanup events to help remove plastic waste, restore marine habitats, and protect wildlife. Work alongside a dedicated team of volunteers who share your passion for ocean conservation. Whether it's cleaning up beaches, rivers, or underwater ecosystems, your efforts contribute to a healthier environment and a more sustainable future for marine life."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:justificationMode="inter_word"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnx3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/intro_btn_background"
+                android:text="Register Now"
+                android:textColor="@color/white" />
+
+            <!-- Impact Tracker -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:padding="10dp"
+                android:text="Impact Tracker"
+                android:textColor="#FFC107"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stay informed about the progress of cleanup efforts with real-time data tracking. Monitor the amount of waste collected, areas restored, and the positive impact on marine ecosystems. See firsthand how your contributions make a difference and use this valuable data to help set new goals for a cleaner, healthier ocean."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:justificationMode="inter_word"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnx4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/intro_btn_background"
+                android:text="Register Now"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/ddd" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

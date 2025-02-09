@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black"
+    tools:context=".Sub">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Back Button -->
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="View Subscription Plans"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@android:color/system_control_highlight_dark"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Basic Plan"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Get access to standard features and track ocean cleanup projects."
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Price: $5/month"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/subscribe_basic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/intro_btn_background"
+                        android:text="Subscribe"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@android:color/system_control_highlight_dark"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Premium Plan"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Get all features, including exclusive reports and early access to cleanup events."
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Price: $10/month"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/subscribe_premium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/intro_btn_background"
+                        android:text="Subscribe"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Subscription Plan 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@android:color/system_control_highlight_dark"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lifetime Plan"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="One-time payment for lifetime access to all features and premium benefits."
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Price: $100 (One-time)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/subscribe_lifetime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/intro_btn_background"
+                        android:text="Subscribe"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

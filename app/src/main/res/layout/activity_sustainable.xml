@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fav" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/abc2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/we1"
+                android:text="Marine Life Sustainability"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+
+            <TextView
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marine life sustainability refers to the responsible use and conservation of ocean ecosystems to maintain biodiversity, support livelihoods, and ensure long-term ecological balance. It involves protecting marine species from overfishing, habitat destruction, and pollution while promoting sustainable fishing, reducing plastic waste, and mitigating climate change."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/editTextText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coral reefs, mangroves, and marine habitats play a crucial role in maintaining ocean health, and their preservation is essential for sustaining marine biodiversity."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marine pollution, especially plastic waste, threatens countless marine species. Every year, millions of tons of plastic enter the oceans, harming wildlife and disrupting ecosystems. Sustainable waste management and awareness campaigns are essential to combat this issue."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marine protected areas (MPAs) and conservation initiatives help preserve marine habitats and restore declining populations of marine species. Strong global policies and community engagement play a vital role in ensuring their success."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By adopting eco-friendly practices, enforcing marine protection laws, and raising awareness, we can ensure that future generations continue to benefit from the ocean’s resources without depleting them."
+                android:textColor="#EFE4E4"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/ddd" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

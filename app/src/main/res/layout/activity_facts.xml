@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="316dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/fav" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="350dp"
+                    android:layout_height="220dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/fact" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/we1"
+                android:text="Quick Marine Facts"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oceans cover 71% of our planet and hold 97% of Earth's water. Coral reefs sustain 25% of marine life while occupying less than 1% of the ocean floor. More than 50% of the oxygen we breathe comes from the ocean. Some fish populations have declined by 90% due to overfishing. The Great Pacific Garbage Patch is twice the size of Texas."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rising ocean temperatures due to climate change are causing coral bleaching, which threatens marine biodiversity. Deep-sea exploration has uncovered new species, highlighting how little we know about the depths of our oceans. Plastic waste, particularly microplastics, is now found in marine organisms, including fish that humans consume."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Many marine species are endangered due to habitat destruction, pollution, and overfishing. Sea turtles mistake plastic bags for jellyfish, leading to fatal consequences. Some whales and dolphins are dying due to high noise pollution from ships and underwater drilling."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/we1"
+                android:text="Ocean Protection Tips"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimize plastic waste by carrying reusable bags, bottles, and straws. Join community beach cleanups to reduce ocean pollution. Opt for sustainably sourced seafood to protect marine life. Conserve water—less waste means less pollution in our oceans. Support organizations working to protect marine life. Use reef-safe sunscreen to prevent ocean contamination. Choose eco-friendly products to minimize environmental harm."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reduce carbon emissions by using public transport, walking, or cycling. The burning of fossil fuels leads to ocean acidification, harming marine organisms such as shellfish and corals. Planting trees and supporting clean energy initiatives can help mitigate these effects."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Educate others about the importance of ocean conservation. Encourage sustainable tourism by respecting marine environments and avoiding harmful activities like touching coral reefs or feeding wild marine animals. By making small changes in daily habits, we can collectively protect our oceans for future generations."
+                android:textColor="#EFE4E4"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:justificationMode="inter_word" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/ddd" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

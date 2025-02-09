@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/selectItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="Select Item"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/itemSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:drawable/editbox_dropdown_dark_frame" />
+
+            <TextView
+                android:id="@+id/quantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Select Quantity"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/quantityLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/decreaseQuantity"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/quantityValue"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/increaseQuantity"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/priceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Total Price"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$25.00"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+
+            <EditText
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter Customer Name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/shippingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/divider_horizontal_dim_dark"
+                android:hint="Enter Shipping Address"
+                android:inputType="textPostalAddress"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/shippingCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter Shipping Code"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/paymentMethodText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Select Payment Method"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/paymentMethods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioCreditCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/radioPaypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PayPal"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/radioGooglePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google Pay"
+                    android:textColor="@color/white"/>
+            </RadioGroup>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/intro_btn_background"
+                android:text="Confirm Purchase"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

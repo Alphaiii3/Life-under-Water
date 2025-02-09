@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="What Do You Like To Know About?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/search_edit_background"
+                android:drawableStart="@drawable/search"
+                android:drawableEnd="@drawable/microphone"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Search"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="Marine Life"
+                android:textColor="#ffc107"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img1" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView13"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img2" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView12"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img3" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/explore"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/intro_btn_background"
+                    android:text="Explore"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Importance"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Importance"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/intro_btn_background"
+                    android:text="Importance"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Sustainable"
+                    app:layout_constraintStart_toEndOf="@+id/explore"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Sustainable"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/intro_btn_background"
+                    android:text="Sustainable"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Importance"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="Pollution Awareness"
+                android:textColor="#ffc107"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aaa1" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView16"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aaa2" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                    app:layout_constraintStart_toEndOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aaa3" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Pollution"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/intro_btn_background"
+                    android:text="Pollution"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/send"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Facts"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/intro_btn_background"
+                    android:text="Facts"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/send"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/send"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/intro_btn_background"
+                    android:text="Pollution Types"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Facts"
+                    app:layout_constraintStart_toEndOf="@+id/Pollution"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                app:fabAlignmentMode="center"
+                app:fabCradleRoundedCornerRadius="15dp"
+                app:fabCradleVerticalOffset="16dp"
+                app:fabCradleMargin="5dp"
+                app:hideOnScroll="true"
+                android:layout_marginTop="28dp"
+
+
+                >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/btn_1"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/btn_2"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/btn_3"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/donatebtn"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/btn_5"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/acc"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/btn_4"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/miniFAB"
+            style="@style/Floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/app_bar"
+            app:fabCradleVerticalOffset="12dp"
+            app:layout_anchorGravity="center"
+
+
+
+            app:maxImageSize="30dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="32dp"
+
+            tools:ignore="OnClick" />
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".editacc">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Profile Picture -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.018"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/search_edit_background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_picture_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/intro_btn_background"
+                android:text="Change Profile Picture"
+                android:textColor="@color/white" />
+
+            <!-- Name Input -->
+            <EditText
+                android:id="@+id/name_input3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Add Your Bio"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter New Username"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Email Input -->
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter New Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Phone Input -->
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter New Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter  New Phone Number"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Password Input -->
+
+            <!-- Save Changes Button -->
+            <EditText
+                android:id="@+id/name_input2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter Your City"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/name_input5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:hint="Enter Your Activities"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/intro_btn_background"
+                android:paddingVertical="12dp"
+                android:text="Save Changes"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
