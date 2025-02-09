@@ -51,7 +51,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="35dp"
                 android:text="Notification Settings"
-                android:textColor="@color/white"
+                android:textColor="#FFC107"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
