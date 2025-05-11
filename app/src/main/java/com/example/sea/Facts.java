@@ -31,14 +31,7 @@ public class Facts extends AppCompatActivity {
             }
         });
 
-        img2=findViewById(R.id.imageView21);
-        img2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(Facts.this, info.class);
-                startActivity(intent1);
-            }
-        });
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.Type), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

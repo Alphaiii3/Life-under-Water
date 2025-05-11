@@ -25,6 +25,17 @@ public class help extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_help);
 
+        btn2=findViewById(R.id.submit_feedback_button2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(help.this, deleteAcc.class);
+                startActivity(intent1);
+
+
+            }
+        });
+
         img=findViewById(R.id.imageView10);
         img.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -16,7 +16,10 @@ public class bubu extends AppCompatActivity {
 
     ImageView img;
     ImageView img2;
-    private Button move;
+    private Button move1;
+    private Button move2;
+    private Button move3;
+    private Button move4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +27,8 @@ public class bubu extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bubu);
 
-        move=findViewById(R.id.btnx1);
-        move.setOnClickListener(new View.OnClickListener() {
+        move1=findViewById(R.id.btnx1);
+        move1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(bubu.this,signup.class);
@@ -33,29 +36,29 @@ public class bubu extends AppCompatActivity {
             }
         });
 
-        move=findViewById(R.id.btnx2);
-        move.setOnClickListener(new View.OnClickListener() {
+        move2=findViewById(R.id.btnx2);
+        move2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(bubu.this,signup.class);
+                Intent intent2 = new Intent(bubu.this,info.class);
                 startActivity(intent2);
             }
         });
 
-        move=findViewById(R.id.btnx3);
-        move.setOnClickListener(new View.OnClickListener() {
+        move3=findViewById(R.id.btnx3);
+        move3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(bubu.this,signup.class);
+                Intent intent2 = new Intent(bubu.this,event3.class);
                 startActivity(intent2);
             }
         });
 
-        move=findViewById(R.id.btnx4);
-        move.setOnClickListener(new View.OnClickListener() {
+        move4=findViewById(R.id.btnx4);
+        move4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(bubu.this,signup.class);
+                Intent intent2 = new Intent(bubu.this,event4.class);
                 startActivity(intent2);
             }
         });
@@ -69,14 +72,7 @@ public class bubu extends AppCompatActivity {
             }
         });
 
-        img2=findViewById(R.id.imageView24);
-        img2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(bubu.this, info.class);
-                startActivity(intent1);
-            }
-        });
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.Type), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

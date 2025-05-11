@@ -13,6 +13,42 @@
         android:theme="@style/Theme.SEA"
         tools:targetApi="31">
         <activity
+            android:name=".manageFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".manageShop"
+            android:exported="false" />
+        <activity
+            android:name=".manageUsers"
+            android:exported="false" />
+        <activity
+            android:name=".adminDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".addIteam"
+            android:exported="false" />
+        <activity
+            android:name=".reportedBeaches"
+            android:exported="false" />
+        <activity
+            android:name=".event4"
+            android:exported="false" />
+        <activity
+            android:name=".event3"
+            android:exported="false" />
+        <activity
+            android:name=".event2"
+            android:exported="false" />
+        <activity
+            android:name=".deleteAcc"
+            android:exported="false" />
+        <activity
+            android:name=".adminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".forgetPassword"
+            android:exported="false" />
+        <activity
             android:name=".buynow"
             android:exported="false" />
         <activity

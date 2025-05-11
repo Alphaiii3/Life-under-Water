@@ -31,14 +31,7 @@ public class Sustainable extends AppCompatActivity {
             }
         });
 
-        img=findViewById(R.id.imageView18);
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(Sustainable.this, info.class);
-                startActivity(intent1);
-            }
-        });
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.Type), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

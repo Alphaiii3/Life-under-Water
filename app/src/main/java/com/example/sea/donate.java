@@ -18,6 +18,7 @@ public class donate extends AppCompatActivity {
     ImageView img;
 
     private Button btn1;
+    private Button additem;
     private Button btn2;
     private Button btn3;
     private Button btn4;
@@ -35,6 +36,17 @@ public class donate extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1=new Intent(donate.this, MainActivity.class);
                 startActivity(intent1);
+            }
+        });
+
+        additem=findViewById(R.id.button6);
+        additem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(donate.this, addIteam.class);
+                startActivity(intent1);
+
+
             }
         });
 

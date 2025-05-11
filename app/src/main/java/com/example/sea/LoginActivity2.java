@@ -15,6 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class LoginActivity2 extends AppCompatActivity {
     private Button Login;
     TextView registernow;
+    TextView forgetpassword;
+    TextView admin;
 
 
     @Override
@@ -28,6 +30,24 @@ public class LoginActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity2.this, register.class);
+                startActivity(intent);
+            }
+        });
+
+        forgetpassword = (TextView) findViewById(R.id.textView4);
+        forgetpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity2.this, forgetPassword.class);
+                startActivity(intent);
+            }
+        });
+
+        admin = (TextView) findViewById(R.id.textView14);
+        admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity2.this, adminLogin.class);
                 startActivity(intent);
             }
         });

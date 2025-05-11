@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView img;
     ImageView img2;
     ImageView img3;
+    ImageView img4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +51,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        img2=findViewById(R.id.imageView);
-        img2.setOnClickListener(new View.OnClickListener() {
+        img3=findViewById(R.id.imageView);
+        img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent1=new Intent(MainActivity.this, Explore.class);
+                startActivity(intent1);
+            }
+        });
+
+        img4=findViewById(R.id.imageView2);
+        img4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(MainActivity.this, reportedBeaches.class);
                 startActivity(intent1);
             }
         });

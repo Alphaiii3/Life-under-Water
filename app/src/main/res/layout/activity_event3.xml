@@ -46,14 +46,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.085"
-        app:srcCompat="@drawable/bu" />
+        app:srcCompat="@drawable/img1" />
 
     <TextView
         android:id="@+id/Type"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Educational Workshop Sign-ups"
+        android:text="Join Clean-ups Event"
         android:textAlignment="center"
         android:textColor="#FFC107"
         android:textSize="24sp"
